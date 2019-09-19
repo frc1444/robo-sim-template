@@ -38,6 +38,7 @@ com_crashlytics_export_strings.xml
 .metadata/
 /android/bin/
 /gdx/bin/
+/core/bin/
 /desktop/bin/
 /html/bin/
 /ios/bin/
@@ -56,6 +57,7 @@ com_crashlytics_export_strings.xml
 /nbproject/private/
 /android/nbproject/private/
 /gdx/nbproject/private/
+/core/nbproject/private/
 /desktop/nbproject/private/
 /html/nbproject/private/
 /ios/nbproject/private/
@@ -64,6 +66,7 @@ com_crashlytics_export_strings.xml
 /build/
 /android/build/
 /gdx/build/
+/core/build/
 /desktop/build/
 /html/build/
 /ios/build/
@@ -72,6 +75,7 @@ com_crashlytics_export_strings.xml
 /nbbuild/
 /android/nbbuild/
 /gdx/nbbuild/
+/core/nbbuild/
 /desktop/nbbuild/
 /html/nbbuild/
 /ios/nbbuild/
@@ -80,6 +84,7 @@ com_crashlytics_export_strings.xml
 /dist/
 /android/dist/
 /gdx/dist/
+/core/dist/
 /desktop/dist/
 /html/dist/
 /ios/dist/
@@ -88,6 +93,7 @@ com_crashlytics_export_strings.xml
 /nbdist/
 /android/nbdist/
 /gdx/nbdist/
+/core/nbdist/
 /desktop/nbdist/
 /html/nbdist/
 /ios/nbdist/
@@ -104,6 +110,7 @@ gradle-app.setting
 /build/
 /android/build/
 /gdx/build/
+/core/build/
 /desktop/build/
 /html/build/
 /ios/build/

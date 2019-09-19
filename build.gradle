@@ -1,5 +1,5 @@
 buildscript {
-    ext.roboSimVersion = "v0.0.1"
+    ext.roboSimVersion = "v0.0.2"
     repositories {
         mavenLocal()
         mavenCentral()
@@ -9,17 +9,16 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.android.tools.build:gradle:3.5.0'
     }
 }
 plugins {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2019.2.1"
+    id "edu.wpi.first.GradleRIO" version "2019.4.1"
     id "idea"
 }
 
 def ROBOT_MAIN_CLASS = "com.first1444.frc.robot2020.Main"
-
 
 
 // Define my targets (RoboRIO) and artifacts (deployable files)
@@ -54,6 +53,7 @@ deploy {
 dependencies {
     implementation "com.github.frc1444:robo-sim:$roboSimVersion"
     implementation "com.github.frc1444.robo-sim:wpi:$roboSimVersion"
+    implementation project(":core")
     compile wpi.deps.wpilib()
     compile wpi.deps.vendor.java()
     nativeZip wpi.deps.vendor.jni(wpi.platforms.roborio)
@@ -140,5 +140,5 @@ jar {
 }
 
 wrapper {
-    gradleVersion = '5.1.1'
+    gradleVersion = '5.4.1'
 }

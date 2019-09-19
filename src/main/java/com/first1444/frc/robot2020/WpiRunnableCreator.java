@@ -9,7 +9,7 @@ public class WpiRunnableCreator implements RunnableCreator {
 	
 	@Override
 	public Runnable createRunnable() {
-		return new RobotRunnable(
+		return new Robot(
 				new WpiFrcDriverStation(DriverStation.getInstance())
 		);
 	}
