@@ -13,12 +13,16 @@ android {
         }
 
     }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
     packagingOptions {
         exclude 'META-INF/robovm/ios/robovm.xml'
     }
     defaultConfig {
         applicationId "com.first1444.frc.robot2020.gdx"
-        minSdkVersion 9
+        minSdkVersion 19 // if you use APIs from Java 8, make sure to change this to 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
