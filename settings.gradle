@@ -26,4 +26,4 @@ pluginManagement {
 }
 
 include "core", "gdx", "desktop"
-include "android"
+include "android" // if you don't want to use android at all, comment this out
