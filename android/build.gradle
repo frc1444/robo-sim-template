@@ -1,4 +1,4 @@
-//apply plugin: "com.android.android"
+//apply plugin: "com.android.android" // doesn't work right now... Come back later... https://developer.android.com/studio/releases/gradle-plugin
 apply plugin: "android"
 
 configurations { natives }

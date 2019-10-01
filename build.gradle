@@ -53,8 +53,8 @@ deploy {
 dependencies {
     implementation project(":core")
     implementation "com.github.frc1444.robo-sim:wpi:$roboSimVersion"
-    compile wpi.deps.wpilib()
-    compile wpi.deps.vendor.java()
+    implementation wpi.deps.wpilib()
+    implementation wpi.deps.vendor.java()
     nativeZip wpi.deps.vendor.jni(wpi.platforms.roborio)
     nativeDesktopZip wpi.deps.vendor.jni(wpi.platforms.desktop)
 }
