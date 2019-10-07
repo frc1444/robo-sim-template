@@ -1,7 +1,6 @@
 apply plugin: "java"
 
 sourceCompatibility = 1.8
-sourceSets.main.java.srcDirs = [ "src/" ]
 sourceSets.main.resources.srcDirs = ["../android/assets"]
 
 project.ext.mainClassName = "com.first1444.frc.robot2020.gdx.desktop.DesktopLauncher"
