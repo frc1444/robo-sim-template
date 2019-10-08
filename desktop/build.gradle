@@ -6,6 +6,15 @@ sourceSets.main.resources.srcDirs = ["../android/assets"]
 project.ext.mainClassName = "com.first1444.frc.robot2020.gdx.desktop.DesktopLauncher"
 project.ext.assetsDir = new File("../android/assets")
 
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-controllers-desktop:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-controllers-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-controllers-lwjgl3:$gdxVersion"
+}
+
 task run(dependsOn: classes, type: JavaExec) {
     main = project.mainClassName
     classpath = sourceSets.main.runtimeClasspath

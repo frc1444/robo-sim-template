@@ -75,21 +75,12 @@ allprojects {
 }
 project(":core"){
     apply plugin: "java-library"
-    dependencies {
-        api "com.github.frc1444:robo-sim:$roboSimVersion"
-        implementation "com.github.frc1444.robo-sim:api:$roboSimVersion"
-        implementation "org.jetbrains.kotlin:kotlin-stdlib:1.3.50"
-    }
 }
 project(":gdx"){
     apply plugin: "java-library"
     version = "1.0"
     dependencies {
         implementation project(":core")
-        api "com.badlogicgames.gdx:gdx:$gdxVersion"
-        api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
-        api "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
-        api "com.github.frc1444.robo-sim:gdx:$roboSimVersion"
     }
 }
 
@@ -98,11 +89,6 @@ project(":desktop") {
 
     dependencies {
         implementation project(":gdx")
-        api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
-        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
-        api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
-        api "com.badlogicgames.gdx:gdx-controllers-desktop:$gdxVersion"
-        api "com.badlogicgames.gdx:gdx-controllers-platform:$gdxVersion:natives-desktop"
 
     }
 }
